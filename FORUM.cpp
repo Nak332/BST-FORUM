@@ -207,11 +207,11 @@ int main() {
 			
 			int inputan;
 			do{	
-				printf("Input the new receipt number [3 digits]: ");
+				printf("Input the new node [3 digits]: ");
 				scanf("%d",&inputan);
 			}while(inputan<=100 or inputan>999);
 			root = insert(root, inputan);
-			printf("Receipt number %d inserted!\n\n",inputan);
+			printf("Node %d inserted!\n\n",inputan);
 			amount++;
 		
 		} else if (choice==2){
@@ -222,7 +222,7 @@ int main() {
              	continue;   
             }
 			do{	
-				printf("Input the receipt number to be searched: ");
+				printf("Input the node to be searched: ");
 				scanf("%d",&inputan);
 			}while(inputan<=100 or inputan>999);
 			
